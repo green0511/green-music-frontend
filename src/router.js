@@ -1,23 +1,18 @@
 // import Vue from 'vue'
 import Router from 'vue-router'
-import Login from './views/Login.vue'
+import Profile from './views/Profile/Profile.vue'
+import ListDetail from './views/listDetail/ListDetail.vue'
+import Main from './views/main/Main.vue'
 
 Vue.use(Router)
 
-// Story view factory
-function createStoriesView (type) {
-  return {
-    name: `${type}-stories-view`,
-    render (createElement) {
-      return createElement(StoriesView, { props: { type }})
-    }
-  }
-}
-
 export default new Router({
-  // mode: 'history',
+  // mode: 'abstract',
   routes: [
-    { path: '/login', component: Login },
-    { path: '/', redirect: '/login' }
+    { path: '/main', component: Main },
+    { path: '/listDetail', component: ListDetail },
+    { path: '/profile', component: Profile },
+    { path: '/profile', component: Profile },
+    { path: '/', redirect: '/main' }
   ]
 })
