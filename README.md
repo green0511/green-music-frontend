@@ -39,3 +39,21 @@ npm run debug
 ## notes
 
 You can config more babel, ESLint and PostCSS plugins in `webpack.config.js`.
+
+
+- 我的                  √
+- 个人主页              √
+  - 用户名
+  - 头像
+  - 全部歌单
+- 歌单详情                
+  - 名称/简介
+  - 创建者
+  - 全部歌曲
+- 歌手页                 
+  - 头像/名字/简介
+  - 全部歌曲
+  - 热门歌曲
+  - 热门专辑
+- 专辑页
+  - 类似于歌单详情

@@ -59,7 +59,7 @@
 </script>
 <style scoped>
   .nav-container {
-    background-color: #009688;
+    background-color: #14282D;
   }
   .nav-status {
     height: 54px;
@@ -77,17 +77,17 @@
 
   .nav-item-text {
     text-align: center;
-    color: #B2DFDB;
+    color: #b0bec5;
     font-size: 42px;
   }
   .nav-item-text-active {
-    color: #fff;
+    color: #009688;
     font-size: 48px;
   }
 
   .nav-underline {
     width: 150px;
-    height: 3px;
-    background-color: #FFFFFF;
+    height: 0px;
+    background-color: #009688;
   }
 </style>

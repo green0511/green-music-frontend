@@ -1,6 +1,6 @@
 {
-  "name": "weex-page",
-  "description": "weex-page",
+  "name": "green-music-frontend",
+  "description": "green-music-frontend",
   "version": "0.1.0",
   "private": true,
   "main": "index.js",
@@ -15,6 +15,7 @@
     "debug": "weex-devtool"
   },
   "dependencies": {
+    "he": "^1.1.1",
     "vue": "^2.1.8",
     "vue-router": "^2.1.1",
     "vuex": "^2.1.1",

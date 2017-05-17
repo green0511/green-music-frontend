@@ -4,22 +4,14 @@
   </div>
 </template>
 <script>
-  const modal = weex.requireModule('modal')
   const navigator = weex.requireModule('navigator')
   export default {
-    props: {
-      url: { required: true }
-    },
     methods: {
       nav () {
-        // modal.toast({message: weex.config.env.platform})
         if (weex.config.env.platform.toLowerCase() == 'web') {
-          return this.$router.push({path: this.url})
+          return this.$router.go(-1)
         }
-        navigator.push({
-          url: `http://192.168.191.1:8080/dist/${this.url}.weex.js`,
-          animated: "true"
-        })
+        navigator.pop()
       }
     }
   }

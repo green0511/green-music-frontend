@@ -1,21 +1,12 @@
 <template>
   <div class="page-container">
     <div class="page-transform-wrap" ref="wrap">
-      <scroller class="scroller">
-        <div class="page" ref="page0">
-          <slot name="page0"></slot>
-        </div>
-      </scroller>
-      <scroller class="scroller">
-        <div class="page" ref="page1">
-          <slot name="page1"></slot>
-        </div>
-      </scroller>
-      <scroller class="scroller">
-        <div class="page" ref="page2">
-          <slot name="page2"></slot>
-        </div>
-      </scroller>
+      <div class="page" ref="page0">
+        <slot name="page0"></slot>
+      </div>
+      <div class="page" ref="page1">
+        <slot name="page1"></slot>
+      </div>
     </div>
   </div>
 </template>
@@ -62,16 +53,22 @@
     flex: 1;
     overflow: hidden;
   }
+
   .page-transform-wrap {
     align-items: stretch;
     flex: 1;
     width: 2250px;
     flex-direction: row;
   }
+
   .scroller {
+    display: flex;
     width: 750px;
   }
+
   .page {
+    /*flex: 1;*/
     width: 750px;
+    /*height: 500px;*/
   }
 </style>

@@ -28,7 +28,7 @@
             <text class="song-info-singer">{{song.singers.join('/')}}</text>
           </div>
           <div class="song-play">
-            <text class="song-play-icon">></text>
+            <icon-font icon="&#xe958;" :size="24"></icon-font>
           </div>
         </cell>
       </list>  
@@ -36,6 +36,7 @@
   </div>
 </template>
 <script>
+  import IconFont from '../../components/IconFont.vue'
   export default {
     data () {
       return {
@@ -61,6 +62,9 @@
       isIOS () {
         return weex.config.env.platform.toLowerCase() == 'ios'
       }
+    },
+    components: {
+      IconFont
     }
   }
 </script>
